@@ -7,16 +7,16 @@ import { headerPlugin } from './headerMdPlugin'
 
 const nav = [
   {
-    text: 'Docs',
+    text: 'Tài liệu',
     activeMatch: `^/(guide|style-guide|cookbook|examples)/`,
     items: [
-      { text: 'Guide', link: '/guide/introduction' },
+      { text: 'Hướng dẫn', link: '/guide/introduction' },
       { text: 'Tutorial', link: '/tutorial/' },
-      { text: 'Examples', link: '/examples/' },
-      { text: 'Quick Start', link: '/guide/quick-start' },
-      { text: 'Style Guide', link: '/style-guide/' },
+      { text: '1 số ví dụ', link: '/examples/' },
+      { text: 'Bẳt đầu nhanh', link: '/guide/quick-start' },
+      { text: 'Phong cách viết', link: '/style-guide/' },
       {
-        text: 'Migration from Vue 2',
+        text: 'Nâng cấp từ Vue 2',
         link: 'https://v3-migration.vuejs.org/'
       }
     ]
@@ -31,11 +31,11 @@ const nav = [
     link: 'https://sfc.vuejs.org'
   },
   {
-    text: 'Ecosystem',
+    text: 'Hệ sinh thái',
     activeMatch: `^/ecosystem/`,
     items: [
       {
-        text: 'Resources',
+        text: 'Tài nguyên',
         items: [
           { text: 'Partners', link: '/ecosystem/partners' },
           { text: 'Themes', link: '/ecosystem/themes' },
@@ -44,7 +44,7 @@ const nav = [
         ]
       },
       {
-        text: 'Video Courses',
+        text: 'Khóa học Video',
         items: [
           {
             text: 'Vue Mastery',
@@ -57,7 +57,7 @@ const nav = [
         ]
       },
       {
-        text: 'Help',
+        text: 'Bạn cần trợ giúp?',
         items: [
           {
             text: 'Discord Chat',
@@ -68,7 +68,7 @@ const nav = [
         ]
       },
       {
-        text: 'News',
+        text: 'Tin tức & Sự kiện',
         items: [
           { text: 'Blog', link: 'https://blog.vuejs.org/' },
           { text: 'Twitter', link: 'https://twitter.com/vuejs' },
@@ -79,7 +79,7 @@ const nav = [
     ]
   },
   {
-    text: 'About',
+    text: 'Về chúng tôi',
     activeMatch: `^/about/`,
     items: [
       { text: 'FAQ', link: '/about/faq' },
@@ -105,9 +105,9 @@ const nav = [
 export const sidebar = {
   '/guide/': [
     {
-      text: 'Getting Started',
+      text: 'Bắt đầu',
       items: [
-        { text: 'Introduction', link: '/guide/introduction' },
+        { text: 'Giới thiệu', link: '/guide/introduction' },
         {
           text: 'Quick Start',
           link: '/guide/quick-start'
@@ -118,35 +118,35 @@ export const sidebar = {
       text: 'Essentials',
       items: [
         {
-          text: 'Creating an Application',
+          text: 'Tạo 1 ứng dụng Vue',
           link: '/guide/essentials/application'
         },
         {
-          text: 'Template Syntax',
+          text: 'Cú pháp template',
           link: '/guide/essentials/template-syntax'
         },
         {
-          text: 'Reactivity Fundamentals',
+          text: 'Cơ chế Reactivity',
           link: '/guide/essentials/reactivity-fundamentals'
         },
         {
-          text: 'Computed Properties',
+          text: 'Thuộc tính Computed',
           link: '/guide/essentials/computed'
         },
         {
-          text: 'Class and Style Bindings',
+          text: 'Binding cho class và style',
           link: '/guide/essentials/class-and-style'
         },
         {
-          text: 'Conditional Rendering',
+          text: 'Render theo điều kiện',
           link: '/guide/essentials/conditional'
         },
-        { text: 'List Rendering', link: '/guide/essentials/list' },
+        { text: 'Render danh sách', link: '/guide/essentials/list' },
         {
-          text: 'Event Handling',
+          text: 'Xử lí sự kiện',
           link: '/guide/essentials/event-handling'
         },
-        { text: 'Form Input Bindings', link: '/guide/essentials/forms' },
+        { text: 'Ràng buộc form input', link: '/guide/essentials/forms' },
         {
           text: 'Lifecycle Hooks',
           link: '/guide/essentials/lifecycle'
@@ -154,7 +154,7 @@ export const sidebar = {
         { text: 'Watchers', link: '/guide/essentials/watchers' },
         { text: 'Template Refs', link: '/guide/essentials/template-refs' },
         {
-          text: 'Components Basics',
+          text: 'Cơ bản về component',
           link: '/guide/essentials/component-basics'
         }
       ]
@@ -163,7 +163,7 @@ export const sidebar = {
       text: 'Components In-Depth',
       items: [
         {
-          text: 'Registration',
+          text: 'Đăng kí Component',
           link: '/guide/components/registration'
         },
         { text: 'Props', link: '/guide/components/props' },
@@ -184,14 +184,14 @@ export const sidebar = {
       ]
     },
     {
-      text: 'Reusability',
+      text: 'Tái sử dụng',
       items: [
         {
           text: 'Composables',
           link: '/guide/reusability/composables'
         },
         {
-          text: 'Custom Directives',
+          text: 'Directives tùy chỉnh',
           link: '/guide/reusability/custom-directives'
         },
         { text: 'Plugins', link: '/guide/reusability/plugins' }
@@ -211,13 +211,13 @@ export const sidebar = {
       ]
     },
     {
-      text: 'Scaling Up',
+      text: 'Mở rộng quy mô ứng dụng',
       items: [
-        { text: 'Single-File Components', link: '/guide/scaling-up/sfc' },
+        { text: 'Single-File Components: SFCs', link: '/guide/scaling-up/sfc' },
         { text: 'Tooling', link: '/guide/scaling-up/tooling' },
         { text: 'Routing', link: '/guide/scaling-up/routing' },
         {
-          text: 'State Management',
+          text: 'Quản lí trạng thái',
           link: '/guide/scaling-up/state-management'
         },
         { text: 'Testing', link: '/guide/scaling-up/testing' },
@@ -228,14 +228,14 @@ export const sidebar = {
       ]
     },
     {
-      text: 'Best Practices',
+      text: 'Nâng cao',
       items: [
         {
-          text: 'Production Deployment',
+          text: 'Triển khai cho môi trường production',
           link: '/guide/best-practices/production-deployment'
         },
         {
-          text: 'Performance',
+          text: 'Hiệu suất',
           link: '/guide/best-practices/performance'
         },
         {
@@ -243,7 +243,7 @@ export const sidebar = {
           link: '/guide/best-practices/accessibility'
         },
         {
-          text: 'Security',
+          text: 'Bảo mật',
           link: '/guide/best-practices/security'
         }
       ]
@@ -251,26 +251,26 @@ export const sidebar = {
     {
       text: 'TypeScript',
       items: [
-        { text: 'Overview', link: '/guide/typescript/overview' },
+        { text: 'Tổng quan', link: '/guide/typescript/overview' },
         {
-          text: 'TS with Composition API',
+          text: 'TS với Composition API',
           link: '/guide/typescript/composition-api'
         },
         {
-          text: 'TS with Options API',
+          text: 'TS với Options API',
           link: '/guide/typescript/options-api'
         }
       ]
     },
     {
-      text: 'Extra Topics',
+      text: 'Mở rộng',
       items: [
         {
-          text: 'Ways of Using Vue',
+          text: 'Các hướng sử dụng Vue',
           link: '/guide/extras/ways-of-using-vue'
         },
         {
-          text: 'Composition API FAQ',
+          text: 'Hỏi đáp vể Composition API',
           link: '/guide/extras/composition-api-faq'
         },
         {
